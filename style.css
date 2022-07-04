@@ -52,6 +52,20 @@ img {
 .gallery {
   width: 80%;
   display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 10px;
+  grid-template: repeat(2, 50%);
+  row-gap: 20px;
+}
+.a {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.b {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
 }
